@@ -50,7 +50,7 @@ class Song
   def self.new_from_filename(filename)
     delimiters = ['.', '- ']
     split_name = filename.split(Regexp.union(delimiters))
-    self.create_by_name(split_name[1])
+    song = self.create_by_name(split_name[1])
   end
 
 end
