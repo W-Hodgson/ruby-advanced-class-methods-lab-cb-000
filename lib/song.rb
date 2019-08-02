@@ -12,7 +12,7 @@ class Song
 
   def create
     song = self.new
-    song
+    song.save
   end
 
 end
