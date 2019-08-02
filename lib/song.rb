@@ -52,6 +52,7 @@ class Song
     split_name = filename.split(Regexp.union(delimiters))
     song = self.create_by_name(split_name[1])
     song.artist_name = split_name[0]
+    song
   end
 
 end
