@@ -1,3 +1,4 @@
+require 'pry'
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -48,6 +49,7 @@ class Song
   def self.new_from_filename(filename)
     delimiters = ['.', '-']
     split_name = filename.split(Regexp.union(delimiters))
+
   end
 
 end
